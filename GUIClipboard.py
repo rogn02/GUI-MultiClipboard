@@ -4,10 +4,13 @@ from pathlib import Path
 import clipboard
 from PIL import ImageTk ,Image
 
-#path
+#path used (this allows me to keep all the images in one place) 
 a=Path("Images")
 
 #functions
+"""
+These functions solely tend to the Delete buttons(2,4,6).We clear the entry  and then reset the clipboard variable."""
+
 def reset1():
     Entry1.delete(0,'end')
     clipboard.copy("")
@@ -19,6 +22,7 @@ def reset3():
     clipboard.copy("")
     
 #Tkinter body
+"""Just configure functions for the various GUI components"""
 top=tk.Tk()
 top.geometry("600x450+650+150")
 top.minsize(148, 1)
