@@ -1,10 +1,13 @@
+#modules used
 import tkinter as tk
 from pathlib import Path
 import clipboard
 from PIL import ImageTk ,Image
 
+#path
 a=Path("Images")
 
+#functions
 def reset1():
     Entry1.delete(0,'end')
     clipboard.copy("")
@@ -14,7 +17,8 @@ def reset2():
 def reset3():
     Entry3.delete(0,'end')
     clipboard.copy("")
-
+    
+#Tkinter body
 top=tk.Tk()
 top.geometry("600x450+650+150")
 top.minsize(148, 1)
